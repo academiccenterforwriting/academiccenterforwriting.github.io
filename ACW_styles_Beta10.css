@@ -1,0 +1,324 @@
+@charset "utf-8";
+/*
+	Mountain View College Layout Style Sheet
+
+	Author: Jason Schneider
+	Date: 5/19/20 
+	Version: Beta 1.0
+	Filename: ACW_styles_Beta10.css
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(MtViewCollege4_BarrettDoherty2014.jpg) center center/cover fixed no-repeat;
+   height: 100%;
+}
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+   background: white;
+   background-color: rgba(255, 255, 255, 0.2);
+   max-width: 1024px;
+   min-width: 420px;
+   margin: 0px auto;
+   box-shadow: rgb(51, 51, 51) 10px 10px 25px,  rgb(51, 51, 51) -10px 10px 25px;
+}
+
+p {
+   font-size: 1.2em;
+   line-height: 1.4em;
+   margin: 15px;
+}	
+
+form > button {
+	float: right;
+	clear: right;
+	margin: 10px 15px;
+	
+}
+
+hr{
+	height: 1px;
+	width: 80%;
+	background-color: rgb(77, 77, 28);
+	border: none;
+}
+
+/* Header Styles */
+
+body > header {
+   background: url(MVC-horiz-RGB.jpg) center/ 70% no-repeat;
+   width: 100%;
+}
+
+body > header > h1 {
+	height: 250px;
+	text-align: right;
+	padding: 10px;
+	padding-top: 30px;
+	padding-right: 10px;
+	font-size: 3.8em;
+	color: rgb(252, 236, 3);
+	text-shadow: black 1px 1px 1px,
+				rgb(42, 57, 144) 0px 0px 1px,
+                rgb(42, 57, 144) 0px 0px 2px,
+                rgb(42, 57, 144) 0px 0px 5px,
+                rgb(42, 57, 144) 0px 0px 8px,                 
+                rgb(42, 57, 144) 0px 0px 10px,
+                rgb(42, 57, 144) 0px 0px 15px;                
+}
+
+/* Top Navigation Styles */
+
+nav#top ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   background-color: rgb(93, 9, 237);
+   height: 70px;
+}
+   
+nav#top ul li {
+   -webkit-flex: 0 1 80px;
+   flex: 0 1 80px;   
+   margin: 10px;
+}
+
+nav#top ul li a {
+   color: rgb(252, 236, 3);
+   display: block;
+   font-size: 1.2em;
+   text-align: center;
+   padding: 50% 0%;
+}
+
+nav#top ul li a:hover, nav#top ul li a:active {
+   color: rgb(15, 3, 252);
+   text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+}
+
+
+/* Section Styles */
+
+section {
+	background-color: rgb(161, 161, 34);
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+section h1 {
+   font-size: 2.5em;
+   color: rgb(252, 236, 3);
+   text-shadow: rgb(42, 57, 144) -2px 0px 1px,  rgb(42, 57, 144) -5px 0px 30px;
+   padding: 20px 15px 10px 0px;
+   text-align: right;
+}
+
+section img {
+   width: 25%;
+   float: left;
+   display: block;
+   margin: 0px 20px 20px 15px;
+}
+
+section p {
+   margin-bottom: 0px;
+}
+
+section a {
+   color: rgb(58, 58, 28);
+}
+
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Article Styles */
+
+article {
+   -webkit-flex: 2 1 400px;
+   flex: 2 1 400px;
+}
+ 
+article > p {
+   color: rgb(252, 236, 3);
+   text-shadow: black 1px 1px 1px,
+				rgb(42, 57, 144) 0px 0px 1px,
+                rgb(42, 57, 144) 0px 0px 2px,
+                rgb(42, 57, 144) 0px 0px 5px,
+                rgb(42, 57, 144) 0px 0px 8px,                 
+                rgb(42, 57, 144) 0px 0px 10px,
+                rgb(42, 57, 144) 0px 0px 15px;
+}				
+/* Aside  Styles */
+
+aside {
+   background-color: rgb(233, 233, 148);
+   color: rgb(96, 96, 28);   
+   -webkit-flex: 1 2 200px;
+   flex: 1 2 200px;   
+}
+
+aside h1 {
+   font-size: 1.6em;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+   line-height: 1em;
+   text-align: center;
+   margin: 20px 0px 5px;
+}
+
+aside h2 {
+   text-align: center;
+   font-size: 1.2em;
+   margin-bottom: 15px;
+}
+
+aside a {
+   color: rgb(234, 44, 234);
+}
+
+/* Description List Styles */
+
+dl {
+   text-align: left;
+   padding: 0px 15px;
+}
+
+dt {
+   font-size: 1.2em;
+   font-weight: bold;
+   margin-top: 20px;
+   border-top: 1px solid rgb(78, 78, 28);
+   padding-top: 5px;
+}
+
+dd {
+   margin: 10px 0px;
+}
+
+dd p {
+   margin: 0px 0px 5px 10px;
+}
+
+
+/* Footer Styles */
+
+footer {
+   width: 100%;
+}
+
+footer p {
+   color: rgb(211, 211, 211);
+   font-size: 0.9em;
+   text-align: center;
+   background-color: black;
+   margin: 0px;
+   padding: 10px 0px;
+}
+
+
+/* Bottom Navigation List Styles */
+
+nav#bottom {
+   background-color: rgb(77, 77, 28);
+   color: rgb(211, 211, 211);
+   padding: 15px;
+}
+
+nav#bottom ul li {
+   font-size: 1em;
+   line-height: 1.8em;
+}
+
+nav#bottom ul a {
+   color: white;
+}
+
+
+
+/* Bottom Navigation Styles */
+
+nav#bottom {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+nav#bottom ul {
+   flex: 0 1 250px;
+}
+
+/* Quotation Styles */
+
+article quote {
+   background: rgb(93, 9, 237);
+   display: block;
+   margin: 20px;
+   font-size: 2em;
+   line-height: 1.2;
+   padding: 15px;
+   border-radius: 30px;
+   font-family: "Times New Roman", Times, serif;
+   quotes: "\201C" "\201D";
+   color: rgb(252, 236, 3);
+}
+ 
+article quote::before {
+   content: open-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.5em;
+   color: rgba(252, 236, 3);
+}
+
+article quote::after {
+   content: close-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.5em;  
+   color: rgba(252, 236, 3);    
+}
+
+button {
+	float: right;
+	margin: 10px 275px;
+}
+
+iframe {
+  margin: auto;
+  width: 80%;
+  border: 3px solid gold;
+  display: block;
+
+}
+
+section h2 {
+   font-size: 1.5em;
+   color: rgb(252, 236, 3);
+   text-shadow: rgb(42, 57, 144) -2px 0px 1px,  rgb(42, 57, 144) -5px 0px 30px;
+   padding: 20px 20px 20px 20px;
+   text-align: left;
+}
+
+section h3 {
+	font-size: 1.5em;
+	color: rgb(252, 236, 3);
+	text-shadow: rgb(42, 57, 144) -2px 0px 1px,  rgb(42, 57, 144) -5px 0px 30px;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+	line-height: 40px; 
+}
